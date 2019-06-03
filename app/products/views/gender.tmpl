@@ -7,9 +7,7 @@
         <li>
           <a href="{{ $category.DefaultPath }}">{{ $category.Name }}</a>
         </li>
-        {{
-          end
-        }}
+        {{ end }}
       </ul>
 
       <h2>COLORS</h2>
@@ -83,9 +81,7 @@
     <div class="grid__col is-10 product_lists">
       <h1>ALL PRODUCTS</h1>
       <ul class="grid">
-        {{
-          range.Products
-        }}
+        {{ range .Products }}
         <li class="grid__col is-3">
           <a href="{{.DefaultPath}}">
             <div
@@ -114,9 +110,7 @@
             </div>
           </a>
         </li>
-        {{
-          end
-        }}
+        {{ end }}
       </ul>
     </div>
   </div>

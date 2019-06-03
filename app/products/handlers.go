@@ -33,7 +33,7 @@ func (ctrl Controller) Gender(w http.ResponseWriter, req *http.Request) {
 		tx       = utils.GetDB(req)
 	)
 
-	tx.Where(&products.Product{Gender: utils.URLParam("gender", req)}).Preload("Category").Find(&Products)
+	tx.Where(&products.Product{Gender: strings.Title(utils.URLParam("gender", req))}).Preload("Category").Find(&Products)
 
 	ctrl.View.Execute("gender", map[string]interface{}{"Products": Products}, req, w)
 }
