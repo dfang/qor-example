@@ -76,5 +76,8 @@ require (
 	github.com/theplant/testingutils v0.0.0-20181126090146-80e83e84b643 // indirect
 	github.com/unrolled/render v1.0.0
 	github.com/yosssi/gohtml v0.0.0-20190128141317-9b7db94d32d9 // indirect
+	gitlab.com/qor2/auth v0.0.0-20190603032202-1797e2b5fa11 // indirect
 	golang.org/x/crypto v0.0.0-20190530122614-20be4c3c3ed5
 )
+
+replace github.com/qor/auth v0.0.0-20190103025640-46aae9fa92fa => gitlab.com/qor2/auth v0.0.0-20190603032202-1797e2b5fa11
